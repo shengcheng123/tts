@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edge TTS Demo</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Text to Speech</h1>
+        <select id="languageFilter">
+            <option value="all">All Languages</option>
+        </select>
+        <select id="voiceSelect">
+            <option value="">Loading voices...</option>
+        </select>
+        <textarea id="textInput" placeholder="Enter text to convert to speech..."></textarea>
+        <button id="convertButton">Convert to Speech</button>
+        <audio id="audioPlayer" controls style="display: none;"></audio>
+    </div>
+    <script src="/static/js/bundle.js"></script>
+</body>
+</html>
